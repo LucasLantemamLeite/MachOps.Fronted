@@ -1,9 +1,13 @@
-import AppLogo from "../../../Assets/Images/Icons/AppLogo.svg";
-import AddIcon from "../../../Assets/Images/Icons/AddIcon.svg";
-import SearchIcon from "../../../Assets/Images/Icons/SearchIcon.svg";
+import { useState } from "react";
+import AppLogo from "../../../Assets/Images/Icons/AppIcon/AppLogo.svg";
+import AddIcon from "../../../Assets/Images/Icons/AppIcon/AddIcon.svg";
+import SearchIcon from "../../../Assets/Images/Icons/AppIcon/SearchIcon.svg";
+import { CreateMachineComponent } from "../CreateMachine/CreateMachineComponent";
 import "./NavBarStyle.scss";
 
 export function NavBarComponent() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <>
       <nav>
@@ -17,12 +21,14 @@ export function NavBarComponent() {
           <input type="text" placeholder="Busque uma máquina..." />
         </div>
         <div>
-          <button>
+          <button onClick={() => setIsOpen(true)}>
             <img src={AddIcon} alt="Icone de adicionar" width="20px" />
             Adicionar
           </button>
         </div>
       </nav>
+
+      {isOpen && <CreateMachineComponent onClose={setIsOpen} />}
     </>
   );
 }
