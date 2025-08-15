@@ -1,0 +1,19 @@
+@use "../../GlobalStyle.scss" as Style;
+
+nav {
+  display: grid;
+  padding: 2.5rem 2rem;
+  align-items: center;
+  grid-template-columns: 0.1fr 1fr 0.1fr;
+  background-color: #{Style.$Primary-Background-Color};
+  box-shadow: 0rem 0.3rem 0.2rem rgba(0, 0, 0, 0.473);
+}
+
+.navbar__div-applogo {
+}
+
+.navbar__div-searchbox {
+}
+
+.navbar__div-addbtn {
+}
