@@ -1,4 +1,4 @@
-import { NavBar } from "../Blocks/NavBar/NavBar";
+import { NavBar } from "../Sections/NavBar/NavBar";
 
 export function DashBoard() {
   return (
