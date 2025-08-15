@@ -2,18 +2,71 @@
 
 nav {
   display: grid;
-  padding: 2.5rem 2rem;
+  padding: 2rem 1.5rem;
   align-items: center;
   grid-template-columns: 0.1fr 1fr 0.1fr;
   background-color: #{Style.$Primary-Background-Color};
-  box-shadow: 0rem 0.3rem 0.2rem rgba(0, 0, 0, 0.473);
-}
-
-.navbar__div-applogo {
+  box-shadow: 0rem 0.2rem 0.6rem rgba(0, 0, 0, 0.651);
 }
 
 .navbar__div-searchbox {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+
+  & .navbar__div-icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0.5rem;
+    border-right: 1px solid rgba(0, 0, 0, 0.466);
+    padding-right: 0.4rem;
+    height: 85%;
+  }
+
+  & input {
+    width: 50rem;
+    padding: #{Style.$Default-Padding};
+    padding-left: 4rem;
+    border-radius: #{Style.$Default-Border-Radius};
+    outline: none;
+    border: none;
+    font-size: #{Style.$Font-md};
+    font-weight: inherit;
+    font-family: inherit;
+
+    &::selection {
+      background-color: #{Style.$Gray-Scale-Color};
+      color: white;
+    }
+  }
 }
 
 .navbar__div-addbtn {
+  display: flex;
+  justify-self: center;
+
+  & button {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: #{Style.$Default-Padding};
+    font-size: #{Style.$Font-sm * 1.2};
+    font-weight: inherit;
+    font-family: inherit;
+    border-radius: #{Style.$Default-Border-Radius};
+    outline: none;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0.1rem 0.3rem 0.6rem rgba(0, 0, 0, 0.555);
+    transition: 300ms ease;
+
+    &:hover {
+      transform: translateX(3px);
+      background-color: #{Style.$Secondary-Background-Color};
+      color: white;
+    }
+  }
 }
