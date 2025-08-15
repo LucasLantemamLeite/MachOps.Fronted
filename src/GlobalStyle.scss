@@ -1,0 +1,39 @@
+// Variáveis //
+
+// Paletas de Cores
+$Primary-Background-Color: #1e3a8a;
+$Secondary-Background-Color: #3b82f6;
+$Light-Scale-Color: #f3f4f6;
+$Gray-Scale-Color: #6b7280;
+$Green-Scale-Color: #10b981;
+$Red-Scale-Color: #ef4444;
+
+// Type Scale - Perfect (aprox. 1.25x)
+$font-xs: 1rem; // 10px → Textos muito pequenos, labels secundárias, captions
+$font-sm: 1.2rem; // 12px → Pequenos textos, botões secundários, info discreta
+$font-md: 1.5rem; // 15px → Corpo de texto padrão, parágrafos, inputs
+$font-lg: 1.8rem; // 18px → Destaques leves, subtítulos, cards
+$font-xl: 2.2rem; // 22px → Títulos de seção, headings H3/H4
+$font-2xl: 2.7rem; // 27px → Títulos importantes, H2
+$font-3xl: 3.4rem; // 34px → Títulos principais, H1
+$font-4xl: 4.2rem; // 42px → Hero sections, grandes chamadas visuais
+$font-5xl: 5.3rem; // 53px → Destaque máximo, banners, landing pages
+
+// ------------------------------------ //
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 65.2%; // 1rem ≈ 10px
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  line-height: 1.4;
+  font-size: 1.6rem;
+}
