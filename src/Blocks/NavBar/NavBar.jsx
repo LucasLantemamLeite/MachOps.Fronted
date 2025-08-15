@@ -1,4 +1,4 @@
-import { Image } from "../../Components/Image/Image";
+import { Image } from "../../Ui/Image/Image";
 import "./NavBarStyle.scss";
 
 export function NavBar() {
